@@ -3,39 +3,52 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
+    android:background="@drawable/background"
+    android:layout_centerVertical="true"
+    android:layout_centerHorizontal="true"
+    android:gravity="center"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <ImageView
-        android:id="@+id/slot1"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignParentLeft="true"
-        android:src="@drawable/banana"
-        />
-
-    <ImageView
-        android:id="@+id/slot2"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_centerHorizontal="true"
-        android:src="@drawable/berry"
-        />
-
-    <ImageView
-        android:id="@+id/slot3"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_alignParentRight="true"
-        android:src="@drawable/estrela"
-        />
-
-    <Button
-        android:id="@+id/btn"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:layout_below="@id/slot2"
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/white"
         android:layout_centerInParent="true"
-        android:text="PARAR!"
-        />
+        >
+
+        <ImageView
+            android:id="@+id/slot1"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:src="@drawable/banana"
+            android:contentDescription="@string/primeiro_slot" />
+
+        <ImageView
+            android:id="@+id/slot2"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:src="@drawable/berry"
+            android:contentDescription="@string/segundo_slot" />
+
+        <ImageView
+            android:id="@+id/slot3"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="100dp"
+            android:src="@drawable/estrela"
+            android:contentDescription="@string/terceiro_slot" />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="200dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/black"
+            android:text="@string/parar" />
+
+    </LinearLayout>
+
 
 </RelativeLayout>

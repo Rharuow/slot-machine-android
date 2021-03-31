@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">CacaNiquel</string>
+    <string name="parar">PARAR!</string>
+    <string name="primeiro_slot">Primeiro Slot</string>
+    <string name="segundo_slot">Segundo Slot</string>
+    <string name="terceiro_slot">Terceiro Slot</string>
 </resources>
