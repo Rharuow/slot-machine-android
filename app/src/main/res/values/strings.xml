@@ -4,4 +4,9 @@
     <string name="primeiro_slot">Primeiro Slot</string>
     <string name="segundo_slot">Segundo Slot</string>
     <string name="terceiro_slot">Terceiro Slot</string>
+    <string name="total">Total</string>
+    <string name="initialValue">1000</string>
+    <string name="apostaTotal">Aposta</string>
+    <string name="initialAposta">50</string>
+    <string name="game_over">GAME OVER</string>
 </resources>
